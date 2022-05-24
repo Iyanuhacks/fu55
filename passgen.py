@@ -17,25 +17,6 @@ password =  "".join(choice(characters) for x in range(randint(12, 16)))
 print(Fore.BLUE,password)
 print("password generated successfully")
 
-
-
-
-print("to save the password for future use  please copy & paste generated password below")
-
-f = open("savepass.py", "a+")
-
-f.write("\n "+input("copy here:"))
-
-f.close()
-
-print("to view saved password press python savepass.py feel comfortable you are the only one who can view the password")
-input("enter y to continue:")
-
-
-
-
-
-
 about=("ABOUT:passgen is a password generator that generate password that cannot be cracked or break by brutes force,dictionary attacks and other types of password cracking tool.it is created in python by iyanuhacks")
 print("if you are  having issues with this tool you can report at my GitHub repo")
 print(Fore.GREEN,about)
